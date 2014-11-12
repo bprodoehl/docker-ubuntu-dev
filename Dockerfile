@@ -13,7 +13,9 @@ RUN apt-get -y dist-upgrade
 # Install build essentials
 RUN apt-get -y install build-essential libasound2-dev flex bison \
                        libdbus-glib-1-dev software-properties-common \
-                       subversion git g++ make 
+                       subversion git g++ make gperf ruby perl \
+                       libsqlite3-dev libfontconfig1-dev libicu-dev \
+                       libfreetype6 libssl-dev libpng-dev libjpeg-dev
 
 # Install 32-bit binary build essentials
 RUN apt-get -y install libc6-dev-i386 g++-multilib
