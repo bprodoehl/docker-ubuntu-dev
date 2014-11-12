@@ -1,10 +1,10 @@
 #!/bin/sh
 
-# Ubuntu 14.04 Builder for gcc, Java, and Node
+# Ubuntu 14.10 Builder for gcc, Java, and Node
 #
 # VERSION               0.0.1
 
-FROM       ubuntu:14.04
+FROM       ubuntu:14.10
 MAINTAINER Brian Prodoehl <bprodoehl@connectify.me>
 
 RUN apt-get -y update
